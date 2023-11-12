@@ -1,21 +1,21 @@
-import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 export default function HomePage() {
-  const [message, setMessage] = React.useState('No message found');
+  const [message, setMessage] = useState('No message found');
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.ipc.on('message', (message: string) => {
       setMessage(message);
     });
   }, []);
 
   return (
-    <React.Fragment>
+    <>
       <Head>
-        <title>Home - Nextron (basic-lang-typescript)</title>
+        <title>Imagenator</title>
       </Head>
       <div>
         <p>
@@ -41,6 +41,6 @@ export default function HomePage() {
         </button>
         <p>{message}</p>
       </div>
-    </React.Fragment>
+    </>
   );
 }

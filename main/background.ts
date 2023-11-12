@@ -14,8 +14,9 @@ if (isProd) {
 void (async () => {
   await app.whenReady();
 
-  const mainWindow = createWindow('main', {
-    width: 1000,
+  const mainWindow = createWindow('Imagenator', {
+    title: 'Imagenator',
+    width: 1024,
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),

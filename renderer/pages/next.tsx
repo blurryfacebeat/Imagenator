@@ -1,12 +1,11 @@
-import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
 export default function NextPage() {
   return (
-    <React.Fragment>
+    <>
       <Head>
-        <title>Next - Nextron (basic-lang-typescript)</title>
+        <title>Imagenator</title>
       </Head>
       <div>
         <p>
@@ -16,6 +15,6 @@ export default function NextPage() {
           </Link>
         </p>
       </div>
-    </React.Fragment>
+    </>
   );
 }

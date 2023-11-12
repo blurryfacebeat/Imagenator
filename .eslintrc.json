@@ -26,6 +26,7 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
-    "n/no-callback-literal": "off"
+    "n/no-callback-literal": "off",
+    "@typescript-eslint/triple-slash-reference": "off"
   }
 }
