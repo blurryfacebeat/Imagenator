@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "my-nextron-app",
-  "description": "My application description",
+  "description": "Application for working with images (compression, changing extension, etc.)",
   "version": "1.0.0",
   "main": "app/background.js",
   "scripts": {
@@ -18,10 +18,18 @@
     "@types/react": "^18.0.26",
     "electron": "^26.2.2",
     "electron-builder": "^24.6.4",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
     "next": "^12.3.4",
     "nextron": "^8.12.0",
+    "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sass": "^1.69.5",
     "typescript": "^5.2.2"
   }
 }
